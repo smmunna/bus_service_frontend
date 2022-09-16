@@ -9,7 +9,7 @@ export default function Header() {
 
   const logout = () => {
     localStorage.clear();
-    navigate("https://iubat-bus-service.netlify.app/login");
+    navigate("/login");
   };
   return (
     <div className="App">

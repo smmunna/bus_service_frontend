@@ -6,7 +6,7 @@ export default function Home() {
   useEffect(() => {
     const auth = localStorage.getItem("user");
     if (!auth) {
-      navigate("https://iubat-bus-service.netlify.app/login");
+      navigate("/login");
     }
   }, [navigate]);
 

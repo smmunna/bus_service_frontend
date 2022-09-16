@@ -34,7 +34,7 @@ const Login = async ()=>{
 useEffect(()=>{
     const auth = localStorage.getItem("user");
     if(auth){
-      navigate("https://iubat-bus-service.netlify.app/home")
+      navigate("/home")
     }
 },[navigate])
  
