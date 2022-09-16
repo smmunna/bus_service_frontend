@@ -34,7 +34,7 @@ const Login = async ()=>{
 useEffect(()=>{
     const auth = localStorage.getItem("user");
     if(auth){
-      navigate("/")
+      navigate("/home")
     }
 },[navigate])
  

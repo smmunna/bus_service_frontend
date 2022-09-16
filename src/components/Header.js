@@ -15,7 +15,7 @@ export default function Header() {
     <div className="App">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <Link class="navbar-brand" to="/">
+          <Link class="navbar-brand" to="/home">
             IUBAT Bus Services
           </Link>
 
@@ -38,7 +38,7 @@ export default function Header() {
               {auth ? (
                 <>
                   <li class="nav-item">
-                    <Link class="nav-link" aria-current="page" to="/">
+                    <Link class="nav-link" aria-current="page" to="/home">
                       Home
                     </Link>
                   </li>

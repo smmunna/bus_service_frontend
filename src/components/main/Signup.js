@@ -16,7 +16,7 @@ export default function Signup() {
         const auth = localStorage.getItem('user')
         if(auth)
         {
-            navigate('/')
+            navigate('/home')
         }
     },[navigate])
     // Onclick btn Submitton;
