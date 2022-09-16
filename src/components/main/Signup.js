@@ -16,7 +16,7 @@ export default function Signup() {
         const auth = localStorage.getItem('user')
         if(auth)
         {
-            navigate('https://wonderful-kashata-9bfc14.netlify.app/home')
+            navigate('https://iubat-bus-service.netlify.app/home')
         }
     },[navigate])
     // Onclick btn Submitton;
