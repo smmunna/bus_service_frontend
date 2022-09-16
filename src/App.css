@@ -1,38 +1,374 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  border-bottom: 3px solid blueviolet;
+  padding: 12px;
+  background-color: #2c3e50;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-link,
+.navbar-brand {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-link {
+  font-size: 18px;
+  font-family: "PT Serif", serif;
+}
+.navbar-brand {
+  font-family: "Reem Kufi Ink", sans-serif;
+  font-size: 35px;
+}
+.nav-link:hover {
+  background-color: #2c3e50;
+  color: red;
+}
+.navbar-brand:hover {
+  color: red;
+}
+.navbar-nav {
+  margin-left: 20%;
+}
+.main {
+  padding-top: 100px;
+  background-color: #2c3e50;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Menu ICOn */
+.material-symbols-outlined {
+  padding: 4px;
+}
+
+.footer {
+  color: aliceblue;
+  font-size: 16px;
+  margin-left: 35%;
+}
+.footer-nav .navbar {
+  border-bottom: none;
+  background-color: #2c3e50;
+}
+
+/* Signup page */
+.bus {
+  margin-top: 20%;
+  height: 300px;
+  width: 400px;
+}
+
+/* Form Data */
+.form input {
+  color: white;
+  width: 50%;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #283949;
+  border-bottom: 3px solid rgb(105, 103, 103);
+  border-right: 3px solid white;
+}
+
+::placeholder {
+  color: rgb(163, 171, 28);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(246, 3, 3);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(255, 0, 0);
+}
+
+.form p {
+  color: yellow;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 15px;
+}
+.form button {
+  background-color: #283949;
+  color: wheat;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 3%;
+  width: 30%;
+}
+
+.form {
+  margin-top: 16%;
+  margin-right: 10%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.input-validation {
+  color: red;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 5rem;
+}
+
+/* Home.js file CSS */
+.home-form p {
+  padding-top: 12px;
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  color: yellow;
+}
+.select-box {
+  width: 30%;
+  height: 50px;
+  border: 1px solid #999;
+  font-size: 18px;
+  color: #f4dc08;
+  padding: 12px;
+  font-weight: 500;
+  background-color: #283949;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.select-box option {
+  width: 30% !important;
+}
+.home-form .from {
+  color: white;
+  margin-right: 25%;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home-form .to {
+  margin-right: 18%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: yellow;
+}
+.home-form {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 70%;
+  margin-left: 16%;
+  margin-top: 2%;
+  padding: 20px;
+}
+
+.home-form button {
+  background-color: #283949;
+  color: wheat;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 30%;
+}
+
+/* Details P */
+.details {
+  font-size: 20px;
+  border: 3px solid rgb(75, 61, 89);
+  padding: 12px;
+}
+
+/* Show.js */
+.myimg img{
+  height: 600px;
+  width: 600px;
+}
+
+.wel-name{
+  color: rgb(5, 248, 74);
+  margin-top: 9px;
+  margin-left: 53%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flink{
+  text-decoration: none;
+}
+/* Responsive Design */
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /* Universal overflow */
+  .App {
+    overflow-y: scroll;
   }
-  to {
-    transform: rotate(360deg);
+  .main {
+    height: 900px;
+  }
+  /* Navbar */
+  .navbar-nav {
+    margin-left: 0;
+  }
+  /* Bus Signup page */
+  .bus {
+    margin-top: 7%;
+    height: 150px;
+    width: 250px;
+  }
+  .form {
+    margin: 5% 5px 12px 5px;
+  }
+
+  .form button {
+    width: 30%;
+  }
+
+  /* Fotter */
+  .footer {
+    margin-left: 27%;
+  }
+
+  /* Home.js */
+  .home-form p {
+    font-size: 22px;
+  }
+  .home-form {
+    width: 100%;
+    margin-left: 0;
+  }
+  .select-box {
+    width: 100%;
+    margin: 5% 0 5% 0;
+  }
+  .home-form .from {
+    margin-right: 80%;
+  }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* Universal overflow */
+  .App {
+    overflow-y: scroll;
+  }
+  .main {
+    height: 900px;
+  }
+  /* Navbar */
+  .navbar-nav {
+    margin-left: 0;
+  }
+  /* Bus Signup page */
+  .bus {
+    margin-top: 7%;
+    height: 150px;
+    width: 250px;
+  }
+  .form {
+    margin: 5% 5px 12px 5px;
+  }
+  .form button {
+    width: 30%;
+  }
+
+  /* Fotter */
+  .footer {
+    margin-left: 27%;
+  }
+
+  /* Home.js */
+  .home-form p {
+    font-size: 22px;
+  }
+  .home-form {
+    width: 100%;
+    margin-left: 0;
+  }
+  .select-box {
+    width: 100%;
+    margin: 5% 0 5% 0;
+  }
+  .home-form .from {
+    margin-right: 80%;
+  }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .App {
+    overflow-y: scroll;
+  }
+  .main {
+    height: 800px;
+  }
+  /* Footer */
+  .footer {
+    border-top: 2px solid gainsboro;
+    color: rgb(141, 146, 150);
+    padding: 8px;
+    margin: 0;
+  }
+ 
+  /* Navbar */
+  .navbar {
+    background-color: #2c3e50;
+  }
+  .navbar-brand {
+    font-size: 28px;
+  }
+  .navbar-nav {
+    margin-left: 0;
+  }
+
+  /* Signup page */
+  .bus {
+    margin-top: 4%;
+    height: 150px;
+    width: 250px;
+  }
+  .form {
+    margin: 52px 5px 12px 5px;
+  }
+  .form input {
+    width: 80%;
+  }
+  .form button {
+    width: 50%;
+  }
+
+  /* Home.js */
+  .home-form p {
+    font-size: 22px;
+  }
+  .home-form {
+    margin-top: -7%;
+    width: 100%;
+    margin-left: 0;
+  }
+  .select-box {
+    width: 100%;
+    margin: 5% 0 5% 0;
+  }
+  .home-form .from {
+    margin-right: 80%;
+  }
+
+  .td-text {
+    font-size: 17px;
+  }
+
+  /* Show.js */
+  .myimg img{
+    height: 400px;
+    width: 500px;
+    padding-right: 29%;
   }
 }
